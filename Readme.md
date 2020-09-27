@@ -20,16 +20,18 @@ now you can run the script:
 Add new URLS:
 ```bash
 main.py -m A FILENAME
+</br>
 ```
 Check the availability of the ebooks:
 ```bash
 main.py -m C
 ```
+</br>
 Create new html overview
 ```bash
 main.py -m D
 ```
-
+</br></br>
 ## License
 This code is licensed under the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/). 
 For more details, please take a look at the [LICENSE file](https://github.com/argv1/dota2-stats/blob/master/LICENSE).
