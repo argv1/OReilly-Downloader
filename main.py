@@ -141,7 +141,6 @@ def main():
     if   mode == "A": df = add_new(df, url_file)
     elif mode == "C": df, cleaning = check_links(df)
     elif mode == "D": create_html(df)
-    elif mode == "N": df = check_new(df)
 
     if cleaning: df = clean_list(df)
 
