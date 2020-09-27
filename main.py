@@ -17,7 +17,7 @@ import time
 time_delay = 1
 
 # input and output
-base_path = Path('H:\OneDrive\Programme\_current\OReilly-Downloader')  #adjust
+base_path = Path(r'H:\OneDrive\Programme\_current\OReilly-Downloader')  #adjust
 link_file = base_path / 'links.csv'  
 deprecated_urls = base_path / 'deprecated.csv'  
 html_file = base_path / 'ebook_overview.html'  
