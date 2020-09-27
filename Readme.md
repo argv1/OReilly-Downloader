@@ -4,6 +4,9 @@
 ## Purpose
 Check the availabilty of O'Reillys free ebooks, create html page for better overview and downloadability.
 
+## Current overview
+If you just interested in an up-to-date overview, check out [Ebook Overview](https://github.com/argv1/OReilly-Downloader/blob/master/ebook_overview.md)
+
 ## Usage
 run pip to ensure all requirements are fulfilled
  
