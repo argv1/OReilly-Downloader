@@ -2,7 +2,7 @@
 ======================
 
 ## Purpose
-Check the availabilty of O'Reilly free ebooks, create html page for better overview and download.
+Check the availabilty of O'Reillys free ebooks, create html page for better overview and downloadability.
 
 ## Usage
 run pip to ensure all requirements are fulfilled
