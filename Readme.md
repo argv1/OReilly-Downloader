@@ -22,7 +22,7 @@ now you can run the script:
 
 Add new URLS:
 ```bash
-main.py -m A FILENAME
+main.py -m A -f FILENAME
 ```
 
 Check the availability of the ebooks:
