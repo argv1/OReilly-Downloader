@@ -17,7 +17,7 @@ import time
 time_delay = 1
 
 # input and output
-base_path = Path(r'H:\OneDrive\Programme\_current\OReilly-Downloader')  #adjust
+base_path = Path(__file__).parent.absolute()
 link_file = base_path / 'links.csv'  
 deprecated_urls = base_path / 'deprecated.csv'  
 html_file = base_path / 'ebook_overview.html'  
@@ -83,7 +83,6 @@ def check_links(df):
 
         # politely wait
         time.sleep(time_delay)
-
     return(df, cleaning)
 
 def create_html(html_df):
@@ -114,10 +113,8 @@ def clean_list(df):
     # create deprecated_urls file if not existing
     if deprecated_urls.is_file():
         dep.to_csv(deprecated_urls, mode='a', encoding="iso-8859-15", index=False)
-
     else:
         dep.to_csv(deprecated_urls, encoding="iso-8859-15", index=False)
-
     return(df)
 
 def main():
@@ -126,11 +123,10 @@ def main():
     parser.add_argument('-m', '--mode', help='A = Add new urls via file, C = check links, D = create html file', type=str, required=True)   
     parser.add_argument('-f', '--file', help='Filename to mass add new urls', type=str)     
     args = parser.parse_args()
-    mode = args.mode
+    mode = args.mode.upper()
     if args.file:
         url_file = base_path / args.file 
     elif not args.file and mode == "A" or args.file and not args.mode:
-        mode = "Z"
         print("If you want to add new urls, you need to call -m A and -f FILENAME.")
 
     cleaning = False
